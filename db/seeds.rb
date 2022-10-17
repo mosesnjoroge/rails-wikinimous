@@ -9,9 +9,9 @@ require 'faker'
 # TODO: Write a seed to insert 100 posts in the database
 
 10.times do
-  article = Article.new(
+  articles = Article.new(
     title: Faker::Lorem.sentence,
     content: Faker::Lorem.paragraphs
   )
-  article.save
+  articles.save
 end
