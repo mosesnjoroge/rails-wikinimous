@@ -4,11 +4,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    # @articles = Article.all
-    # @article = @articles.each do |article|
-    #   article.title
-    #   article.content
-    # end
+    @article = Article.new
   end
 
   def new
@@ -27,11 +23,9 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def update
-
-  end
+  def update; end
 
   def destory
-
+    @article = Article.destory
   end
 end
