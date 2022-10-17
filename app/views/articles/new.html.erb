@@ -1,3 +1,6 @@
-<h3>Please upload the file you would like</h3>
-<%= @article = Article.new %>
-<%= link_to 'back', root_path %>
+<div class="container">
+  <h1>New article</h1>
+
+  <%= render 'form' %>
+  <%= link_to 'Back', articles_path %>
+</div>
